@@ -7,17 +7,20 @@ Gem::Specification.new do |spec|
   spec.name          = "grids_lite"
   spec.version       = GridsLite::VERSION
   spec.authors       = ["Miles Stanfield"]
-  spec.email         = ["miles.stanfield@turner.com"]
+  spec.email         = ["milesstanfield@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{An extremely lightweight responsive grid system.}
+  spec.description   = %q{A responsive grid system doesn't have to be complicated
+                          or full of rarely used styles that make your file sizes large. GridsLite.css
+                          is a lightweight and simple solution to responsive grids.
+                         }
+  spec.homepage      = "Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "Set to 'http://mygemserver.com'"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
