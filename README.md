@@ -38,6 +38,7 @@ Pick and choose which column stylesheets to include in your asset pipeline. **ba
 
 ## Usage
 
+example 1
 ```
 .col-1-1.col-1-2-med.col-2-8-lrg
   %div{style: "font-size: 20px"}
@@ -48,7 +49,7 @@ Pick and choose which column stylesheets to include in your asset pipeline. **ba
     = "100% wide at mobile width, 50% wide at tablet width, 75% wide at desktop width and above"
 ```
 
-
+example 2
 ```
 .col-1-1.col-1-5-med
   %div{style: "font-size: 20px"}
