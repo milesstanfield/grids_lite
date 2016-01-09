@@ -18,10 +18,10 @@ Or install it yourself as:
 
     $ gem install grids_lite
 
-## Usage
+## Setup
 Pick and choose which column stylesheets to include in your asset pipeline. **base is not optional.**
 
-<pre>
+```
 # app/assets/stylesheets/application.css
 
 *= require "grids_lite/base"
@@ -33,7 +33,19 @@ Pick and choose which column stylesheets to include in your asset pipeline. **ba
 *= require "grids_lite/col-6"
 *= require "grids_lite/col-7"
 *= require "grids_lite/col-8"
-</pre>
+```
+
+
+## Usage
+
+.col-1-1.col-1-2-med.col-2-8-lrg
+  %div{style: "font-size: 20px"}
+    = "hello world"
+
+
+## Gotchas
+
+GridsLite uses ```display: inline-block;``` to arrange the columns. To account for the HTML default horizontal space between inline-block elements, GridsLite sets ```font-size: 0;``` on the body tag. This means that **you MUST declare font-sizes for your elements** with classes or inline or however you wish.
 
 
 ## Contributing
