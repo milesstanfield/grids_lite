@@ -38,14 +38,30 @@ Pick and choose which column stylesheets to include in your asset pipeline. **ba
 
 ## Usage
 
+```
 .col-1-1.col-1-2-med.col-2-8-lrg
   %div{style: "font-size: 20px"}
-    = "hello world"
+    = "100% wide at mobile width, 50% wide at tablet width, 25% wide at desktop width and above"
 
+.col-1-1.col-1-2-med.col-6-8-lrg
+  %div{style: "font-size: 20px"}
+    = "100% wide at mobile width, 50% wide at tablet width, 75% wide at desktop width and above"
+```
+
+
+```
+.col-1-1.col-1-5-med
+  %div{style: "font-size: 20px"}
+    = "100% wide at mobile width, 20% wide at tablet width and above"
+
+.col-1-1.col-4-5-med
+  %div{style: "font-size: 20px"}
+    = "100% wide at mobile width, 80% wide at tablet width and above"
+```
 
 ## Gotchas
 
-GridsLite uses ```display: inline-block;``` to arrange the columns. To account for the HTML default horizontal space between inline-block elements, GridsLite sets ```font-size: 0;``` on the body tag. This means that **you MUST declare font-sizes for your elements** with classes or inline or however you wish.
+GridsLite uses ```display: inline-block``` to arrange the columns. To account for the default horizontal space between inline-block elements, GridsLite sets ```font-size: 0``` on the body tag. This means that **you MUST declare font-sizes for your elements** with classes or inline or however you wish.
 
 
 ## Contributing
