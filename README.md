@@ -1,6 +1,6 @@
 # GridsLite
 
-A responsive grid system doesn't have to be complicated or full of unused styles. GridsLite.css is a lightweight and simple solution to responsive grids where you include the columns that you need and leave out the ones you don't. Supports gutters for columns too!
+A responsive grid system doesn't have to be complicated or full of unused styles. GridsLite.css is a lightweight and simple solution to responsive grids where you include the columns that you need and leave out the ones you don't. Also supports gutters for columns.
 
 ## Installation
 
@@ -60,10 +60,24 @@ example 2
     = "100% wide at mobile width, 80% wide at tablet width and above"
 ```
 
+example with gutters
+```
+.gutters
+  .col-1-1
+    %div{style: "font-size: 20px"}
+      = "100% wide at mobile width and above"
+  .col-1-1
+    %div{style: "font-size: 20px"}
+      = "100% wide at mobile width and above"
+```
+
 ## Gotchas
 
 GridsLite uses ```display: inline-block``` to arrange the columns. To account for the default horizontal space between inline-block elements, GridsLite sets ```font-size: 0``` on the body tag. This means that **you MUST declare font-sizes for your elements** with classes or inline or however you wish.
 
+
+## Future releases
+To include: Customizing media query breakpoints and gutter distances
 
 ## Contributing
 
