@@ -1,0 +1,49 @@
+.col-5-5 {
+  width: 100%;
+}
+.col-4-5 {
+  width: 80%;
+}
+.col-3-5 {
+  width: 60%;
+}
+.col-2-5 {
+  width: 40%;
+}
+.col-1-5 {
+  width: 20%;
+}
+@media only screen and (min-width: 48em) {
+  .col-5-5-med {
+    width: 100%;
+  }
+  .col-4-5-med {
+    width: 80%;
+  }
+  .col-3-5-med {
+    width: 60%;
+  }
+  .col-2-5-med {
+    width: 40%;
+  }
+  .col-1-5-med {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .col-5-5-lrg {
+    width: 100%;
+  }
+  .col-4-5-lrg {
+    width: 80%;
+  }
+  .col-3-5-lrg {
+    width: 60%;
+  }
+  .col-2-5-lrg {
+    width: 40%;
+  }
+  .col-1-5-lrg {
+    width: 20%;
+  }
+}

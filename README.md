@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+<pre>
+  *= require "grids_lite"
+</pre>
 
 ## Development
 
