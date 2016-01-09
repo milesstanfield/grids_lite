@@ -95,7 +95,7 @@ When using .gutters, the ```.gutters``` div has margin applied to it and the ```
 
 ## Future releases
 To include: Customizing media query breakpoints and gutter distances.
-
+<br>
 **Current settings**
 - tablet width starting at 768px
 - desktop width starting at 1024px
