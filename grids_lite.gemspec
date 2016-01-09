@@ -10,11 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["milesstanfield@gmail.com"]
 
   spec.summary       = %q{An extremely lightweight responsive grid system.}
-  spec.description   = %q{A responsive grid system doesn't have to be complicated
-                          or full of rarely used styles that make your file sizes large. GridsLite.css
-                          is a lightweight and simple solution to responsive grids.
-                         }
-  spec.homepage      = "Put your gem's website or public repo URL here."
+  spec.description   = %q{A responsive grid system doesn't have to be complicated or full of unused styles that bloats file sizes. GridsLite.css is a lightweight and simple solution to responsive grids.}
+  spec.homepage      = "https://github.com/milesstanfield/grids_lite"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
