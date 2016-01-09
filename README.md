@@ -1,6 +1,6 @@
 # GridsLite
 
-A responsive grid system doesn't have to be complicated or full of unused styles. GridsLite.css is a lightweight and simple solution to responsive grids where you include the columns that you need and leave out the ones you don't. Also supports gutters for columns.
+A responsive grid system doesn't have to be complicated or full of unused styles. GridsLite is a lightweight and simple solution to responsive grids where you include the columns that you need and leave out the ones you don't. Also supports gutters for columns.
 
 ## Installation
 
