@@ -1,6 +1,6 @@
 # GridsLite
 
-A responsive grid system doesn't have to be complicated or full of unused styles that bloats file sizes. GridsLite.css is a lightweight and simple solution to responsive grids.
+A responsive grid system doesn't have to be complicated or full of unused styles. GridsLite.css is a lightweight and simple solution to responsive grids where you include the columns that you need and leave out the ones you don't. Supports gutters for columns too!
 
 ## Installation
 
@@ -19,20 +19,26 @@ Or install it yourself as:
     $ gem install grids_lite
 
 ## Usage
+Pick and choose which column stylesheets to include in your asset pipeline. **base is not optional.**
 
 <pre>
-  *= require "grids_lite"
+# app/assets/stylesheets/application.css
+
+*= require "grids_lite/base"
+*= require "grids_lite/col-1"
+*= require "grids_lite/col-2"
+*= require "grids_lite/col-3"
+*= require "grids_lite/col-4"
+*= require "grids_lite/col-5"
+*= require "grids_lite/col-6"
+*= require "grids_lite/col-7"
+*= require "grids_lite/col-8"
 </pre>
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/grids_lite. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/milesstanfield/grids_lite. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License

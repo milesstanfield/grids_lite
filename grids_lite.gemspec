@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Miles Stanfield"]
   spec.email         = ["milesstanfield@gmail.com"]
 
-  spec.summary       = %q{An extremely lightweight responsive grid system.}
-  spec.description   = %q{A responsive grid system doesn't have to be complicated or full of unused styles that bloats file sizes. GridsLite.css is a lightweight and simple solution to responsive grids.}
+  spec.summary       = %q{A lightweight use-it-as-you-need-it responsive grid system.}
+  # spec.description   = %q{TODO}
   spec.homepage      = "https://github.com/milesstanfield/grids_lite"
   spec.license       = "MIT"
 

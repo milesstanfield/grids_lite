@@ -7,6 +7,11 @@ describe "GridsLite", type: :feature do
       expect(page.body).to include "body {"
     end
 
+    it "has a col-1 css file" do
+      visit "app/assets/stylesheets/grids_lite/col-1.css"
+      expect(page.body).to include ".col-1-1"
+    end
+
     it "has a col-2 css file" do
       visit "app/assets/stylesheets/grids_lite/col-2.css"
       expect(page.body).to include ".col-2-2"
@@ -30,6 +35,11 @@ describe "GridsLite", type: :feature do
     it "has a col-6 css file" do
       visit "app/assets/stylesheets/grids_lite/col-6.css"
       expect(page.body).to include ".col-6-6"
+    end
+
+    it "has a col-7 css file" do
+      visit "app/assets/stylesheets/grids_lite/col-7.css"
+      expect(page.body).to include ".col-7-7"
     end
 
     it "has a col-8 css file" do
