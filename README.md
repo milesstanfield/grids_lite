@@ -90,7 +90,7 @@ example with gutters
 
 GridsLite uses ```display: inline-block``` to arrange the columns. To account for the default horizontal space between inline-block elements, GridsLite sets ```font-size: 0``` on the body tag. This means that **you MUST declare font-sizes for your text elements** with classes or inline or however you wish.
 
-When using .gutters, the ```.gutters``` div has margin applied to it and the ```.col-``` elements have padding applied to them. It would be advisable when using ```.gutters``` to not use any margin or padding directly on those divs and instead use it above or below them in the dom hierarchy so no conflicts occur.
+When using ```.gutters```, the ```.gutters``` div has margin applied to it and the ```.col-``` elements have padding applied to them. It would be advisable when using ```.gutters``` to not use any margin or padding directly on those divs and instead use it above or below them in the dom hierarchy so no conflicts occur.
 
 
 ## Future releases
