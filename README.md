@@ -7,7 +7,7 @@ A responsive grid system doesn't have to be complicated or full of unused styles
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'grids_lite'
+gem 'grids_lite', '~> 1.0.0'
 ```
 
 And then execute:
@@ -38,40 +38,45 @@ Pick and choose which column stylesheets to include in your asset pipeline. **ba
 
 ## Usage
 
-example 1
+Wrap your ```col-``` classes in a ```columns``` class. If you are using text inside your ```col-``` classes you will also need to set a font-size for the text somewhere inside for the text to appear.
+
+Example 1
 ```
-<div class="col-1-1 col-1-2-med col-2-8-lrg">
-  <div style="font-size: 20px">
-    100% wide at mobile width, 50% wide at tablet width, 25% wide at desktop width and above
+<div class="columns">
+  <div class="col-1-1 col-1-2-med col-2-8-lrg">
+    <div style="font-size: 20px">
+      100% wide at mobile width, 50% wide at tablet width, 25% wide at desktop width and above
+    </div>
   </div>
-</div>
 
-
-<div class="col-1-1 col-1-2-med col-6-8-lrg">
-  <div style="font-size: 20px">
-    100% wide at mobile width, 50% wide at tablet width, 75% wide at desktop width and above
+  <div class="col-1-1 col-1-2-med col-6-8-lrg">
+    <div style="font-size: 20px">
+      100% wide at mobile width, 50% wide at tablet width, 75% wide at desktop width and above
+    </div>
   </div>
 </div>
 ````
 
-example 2
+Example 2
 ```
-<div class="col-1-1 col-1-5-med">
-  <div style="font-size: 20px">
-    100% wide at mobile width, 20% wide at tablet width and above
+<div class="columns">
+  <div class="col-1-1 col-1-5-med">
+    <div style="font-size: 20px">
+      100% wide at mobile width, 20% wide at tablet width and above
+    </div>
+  </div>
+
+  <div class="col-1-1 col-4-5-med">
+    <div style="font-size: 20px">
+      100% wide at mobile width, 80% wide at tablet width and above
+    </div>
   </div>
 </div>
-
-<div class="col-1-1 col-4-5-med">
-  <div style="font-size: 20px">
-    100% wide at mobile width, 80% wide at tablet width and above
-  </div>
-</div>
 ```
 
-example with gutters
+Example using gutters
 ```
-<div class="gutters">
+<div class="columns gutters">
   <div class="col-1-1">
     <div style="font-size: 20px">
       100% wide at mobile width and above
@@ -88,9 +93,9 @@ example with gutters
 
 ## Gotchas
 
-GridsLite uses ```display: inline-block``` to arrange the columns. To account for the default horizontal space between inline-block elements, GridsLite sets ```font-size: 0``` on the body tag. This means that **you MUST declare font-sizes for your text elements** with classes or inline or however you wish.
+GridsLite uses ```display: inline-block``` to arrange the columns. To account for the default horizontal space between inline-block elements, GridsLite sets ```font-size: 0``` using the ```columns``` class. This means that **you MUST declare font-sizes for your text elements** with classes, id's, inline or however you wish.
 
-When using ```.gutters```, the ```.gutters``` div has margin applied to it and the ```.col-``` elements have padding applied to them. It would be advisable when using ```.gutters``` to not use any margin or padding directly on those divs and instead use it above or below them in the dom hierarchy so no conflicts occur.
+When using ```gutters```, be aware that your div has side margin applied to it and the ```col-``` elements have side padding applied to them. It would be advisable when using ```gutters``` to not use any side margin or side padding directly on those divs and instead use it above or below them in the dom hierarchy so no conflicts occur.
 
 
 ## Future releases
@@ -100,6 +105,7 @@ To include: Customizing media query breakpoints and gutter distances.
 - tablet width starting at 768px
 - desktop width starting at 1024px
 - gutters distances set to 20px
+- multiple nesting layers for gutters without extra padding
 
 ## Contributing
 
