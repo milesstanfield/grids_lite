@@ -99,13 +99,15 @@ When using ```gutters```, be aware that your div has side margin applied to it a
 
 
 ## Future releases
-To include: Customizing media query breakpoints and gutter distances.
+- Customize media query breakpoints
+- Customize gutter distances
+- Create more column files. Go from current 8 to 16 columns
+- Be able to nest columns within columns while using gutters and gutters not multiply on each level
 <br>
 **Current settings**
 - tablet width starting at 768px
 - desktop width starting at 1024px
 - gutters distances set to 20px
-- multiple nesting layers for gutters without extra padding
 
 ## Contributing
 
