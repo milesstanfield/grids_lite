@@ -20,6 +20,10 @@ Or install it yourself as:
 
 ## Setup
 
+```
+rails g grids_lite variables
+```
+
 Pick and choose which column stylesheets to include in your asset pipeline. **base is not optional.**
 
 ```
@@ -100,12 +104,9 @@ Example using gutters
 
 ## Customize
 
-To change media query breakpoints and gutter widths run the variables generator
-```
-rails g grids_lite variables
-```
+To change media query breakpoints and gutter widths, change the sass variables in the generated file located at ```app/assets/stylesheets/grids_lite_variables.scss```
 
-Then you can change the sass variables in the generated file located at ```app/assets/stylesheets/grids_lite_variables.scss```
+which has these variables
 
 ```
 $med-width: 768px;
