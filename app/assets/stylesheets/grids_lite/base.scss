@@ -1,5 +1,7 @@
+@import "grids_lite_variables";
+
 .gutters {
-  margin: 0 -10px;
+  margin: 0 calc(#{$gutter-width} * -0.5);
 }
 .gutters [class*=col-] {
   -webkit-box-sizing: border-box;
@@ -7,7 +9,7 @@
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 calc(#{$gutter-width} * 0.5);
 }
 [class*=col-] {
   display: inline-block;

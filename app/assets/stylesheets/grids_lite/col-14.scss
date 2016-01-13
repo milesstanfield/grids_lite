@@ -1,0 +1,133 @@
+@import "grids_lite_variables";
+@import "mixins";
+
+.col-14-14 {
+  @include percentage(14, 14);
+}
+.col-13-14 {
+  @include percentage(13, 14);
+}
+.col-12-14 {
+  @include percentage(12, 14);
+}
+.col-11-14 {
+  @include percentage(11, 14);
+}
+.col-10-14 {
+  @include percentage(10, 14);
+}
+.col-9-14 {
+  @include percentage(9, 14);
+}
+.col-8-14 {
+  @include percentage(8, 14);
+}
+.col-7-14 {
+  @include percentage(7, 14);
+}
+.col-6-14 {
+  @include percentage(6, 14);
+}
+.col-5-14 {
+  @include percentage(5, 14);
+}
+.col-4-14 {
+  @include percentage(4, 14);
+}
+.col-3-14 {
+  @include percentage(3, 14);
+}
+.col-2-14 {
+  @include percentage(2, 14);
+}
+.col-1-13 {
+  @include percentage(1, 14);
+}
+@media only screen and (min-width: $med-width) {
+  .col-14-14-med {
+    @include percentage(14, 14);
+  }
+  .col-13-14-med {
+    @include percentage(13, 14);
+  }
+  .col-12-14-med {
+    @include percentage(12, 14);
+  }
+  .col-11-14-med {
+    @include percentage(11, 14);
+  }
+  .col-10-14-med {
+    @include percentage(10, 14);
+  }
+  .col-9-14-med {
+    @include percentage(9, 14);
+  }
+  .col-8-14-med {
+    @include percentage(8, 14);
+  }
+  .col-7-14-med {
+    @include percentage(7, 14);
+  }
+  .col-6-14-med {
+    @include percentage(6, 14);
+  }
+  .col-5-14-med {
+    @include percentage(5, 14);
+  }
+  .col-4-14-med {
+    @include percentage(4, 14);
+  }
+  .col-3-14-med {
+    @include percentage(3, 14);
+  }
+  .col-2-14-med {
+    @include percentage(2, 14);
+  }
+  .col-1-13-med {
+    @include percentage(1, 14);
+  }
+}
+@media only screen and (min-width: $lrg-width) {
+  .col-14-14-lrg {
+    @include percentage(14, 14);
+  }
+  .col-13-14-lrg {
+    @include percentage(13, 14);
+  }
+  .col-12-14-lrg {
+    @include percentage(12, 14);
+  }
+  .col-11-14-lrg {
+    @include percentage(11, 14);
+  }
+  .col-10-14-lrg {
+    @include percentage(10, 14);
+  }
+  .col-9-14-lrg {
+    @include percentage(9, 14);
+  }
+  .col-8-14-lrg {
+    @include percentage(8, 14);
+  }
+  .col-7-14-lrg {
+    @include percentage(7, 14);
+  }
+  .col-6-14-lrg {
+    @include percentage(6, 14);
+  }
+  .col-5-14-lrg {
+    @include percentage(5, 14);
+  }
+  .col-4-14-lrg {
+    @include percentage(4, 14);
+  }
+  .col-3-14-lrg {
+    @include percentage(3, 14);
+  }
+  .col-2-14-lrg {
+    @include percentage(2, 14);
+  }
+  .col-1-13-lrg {
+    @include percentage(1, 14);
+  }
+}

@@ -1,0 +1,97 @@
+@import "grids_lite_variables";
+@import "mixins";
+
+.col-10-10 {
+  @include percentage(10, 10);
+}
+.col-9-10 {
+  @include percentage(9, 10);
+}
+.col-8-10 {
+  @include percentage(8, 10);
+}
+.col-7-10 {
+  @include percentage(7, 10);
+}
+.col-6-10 {
+  @include percentage(6, 10);
+}
+.col-5-10 {
+  @include percentage(5, 10);
+}
+.col-4-10 {
+  @include percentage(4, 10);
+}
+.col-3-10 {
+  @include percentage(3, 10);
+}
+.col-2-10 {
+  @include percentage(2, 10);
+}
+.col-1-10 {
+  @include percentage(1, 10);
+}
+@media only screen and (min-width: $med-width) {
+  .col-10-10-med {
+    @include percentage(10, 10);
+  }
+  .col-9-10-med {
+    @include percentage(9, 10);
+  }
+  .col-8-10-med {
+    @include percentage(8, 10);
+  }
+  .col-7-10-med {
+    @include percentage(7, 10);
+  }
+  .col-6-10-med {
+    @include percentage(6, 10);
+  }
+  .col-5-10-med {
+    @include percentage(5, 10);
+  }
+  .col-4-10-med {
+    @include percentage(4, 10);
+  }
+  .col-3-10-med {
+    @include percentage(3, 10);
+  }
+  .col-2-10-med {
+    @include percentage(2, 10);
+  }
+  .col-1-10-med {
+    @include percentage(1, 10);
+  }
+}
+@media only screen and (min-width: $lrg-width) {
+  .col-10-10-lrg {
+    @include percentage(10, 10);
+  }
+  .col-9-10-lrg {
+    @include percentage(9, 10);
+  }
+  .col-8-10-lrg {
+    @include percentage(8, 10);
+  }
+  .col-7-10-lrg {
+    @include percentage(7, 10);
+  }
+  .col-6-10-lrg {
+    @include percentage(6, 10);
+  }
+  .col-5-10-lrg {
+    @include percentage(5, 10);
+  }
+  .col-4-10-lrg {
+    @include percentage(4, 10);
+  }
+  .col-3-10-lrg {
+    @include percentage(3, 10);
+  }
+  .col-2-10-lrg {
+    @include percentage(2, 10);
+  }
+  .col-1-10-lrg {
+    @include percentage(1, 10);
+  }
+}

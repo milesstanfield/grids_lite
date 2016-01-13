@@ -1,0 +1,3 @@
+@mixin percentage($target, $context) {
+  width: (($target/$context)*100%);
+}

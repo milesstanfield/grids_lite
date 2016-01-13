@@ -7,7 +7,7 @@ A responsive grid system doesn't have to be complicated or full of unused styles
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'grids_lite', '~> 1.0.0'
+gem 'grids_lite'
 ```
 
 And then execute:
@@ -19,6 +19,7 @@ Or install it yourself as:
     $ gem install grids_lite
 
 ## Setup
+
 Pick and choose which column stylesheets to include in your asset pipeline. **base is not optional.**
 
 ```
@@ -33,6 +34,12 @@ Pick and choose which column stylesheets to include in your asset pipeline. **ba
 *= require "grids_lite/col-6"
 *= require "grids_lite/col-7"
 *= require "grids_lite/col-8"
+*= require "grids_lite/col-9"
+*= require "grids_lite/col-10"
+*= require "grids_lite/col-11"
+*= require "grids_lite/col-12"
+*= require "grids_lite/col-13"
+*= require "grids_lite/col-14"
 ```
 
 
@@ -91,23 +98,35 @@ Example using gutters
 </div>
 ```
 
-## Gotchas
+## Customize
+
+To change media query breakpoints and gutter widths run the variables generator
+```
+rails g grids_lite variables
+```
+
+Then you can change the sass variables in the generated file located at ```app/assets/stylesheets/grids_lite_variables.scss```
+
+```
+$med-width: 768px;
+$lrg-width: 1024px;
+$gutter-width: 20px;
+```
+
+
+
+## Notes
 
 GridsLite uses ```display: inline-block``` to arrange the columns. To account for the default horizontal space between inline-block elements, GridsLite sets ```font-size: 0``` using the ```columns``` class. This means that **you MUST declare font-sizes for your text elements** with classes, id's, inline or however you wish.
 
-When using ```gutters```, be aware that your div has side margin applied to it and the ```col-``` elements have side padding applied to them. It would be advisable when using ```gutters``` to not use any side margin or side padding directly on those divs and instead use it above or below them in the dom hierarchy so no conflicts occur.
+When using ```gutters```, be aware a side margin is applied to that class and ```col-``` elements have side padding applied to them. It would be advisable when using ```gutters``` to not use any side margin/padding directly on those elements and instead use it above or below them in the dom hierarchy so no conflicts occur.
+
 
 
 ## Future releases
-- Customize media query breakpoints
-- Customize gutter distances
-- Create more column files. Go from current 8 to 16 columns
 - Be able to nest columns within columns while using gutters and gutters not multiply on each level
-<br>
-**Current settings**
-- tablet width starting at 768px
-- desktop width starting at 1024px
-- gutters distances set to 20px
+
+
 
 ## Contributing
 

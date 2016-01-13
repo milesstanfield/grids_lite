@@ -1,0 +1,43 @@
+@import "grids_lite_variables";
+@import "mixins";
+
+.col-4-4 {
+  @include percentage(4, 4);
+}
+.col-3-4 {
+  @include percentage(3, 4);
+}
+.col-2-4 {
+  @include percentage(2, 4);
+}
+.col-1-4 {
+  @include percentage(1, 4);
+}
+@media only screen and (min-width: $med-width) {
+  .col-4-4-med {
+    @include percentage(4, 4);
+  }
+  .col-3-4-med {
+    @include percentage(3, 4);
+  }
+  .col-2-4-med {
+    @include percentage(2, 4);
+  }
+  .col-1-4-med {
+    @include percentage(1, 4);
+  }
+}
+@media only screen and (min-width: $lrg-width) {
+  .col-4-4-lrg {
+    @include percentage(4, 4);
+  }
+  .col-3-4-lrg {
+    @include percentage(3, 4);
+  }
+  .col-2-4-lrg {
+    @include percentage(2, 4);
+  }
+  .col-1-4-lrg {
+    @include percentage(1, 4);
+  }
+}

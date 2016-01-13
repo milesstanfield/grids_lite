@@ -1,0 +1,88 @@
+@import "grids_lite_variables";
+@import "mixins";
+
+.col-9-9 {
+  @include percentage(9, 9);
+}
+.col-8-9 {
+  @include percentage(8, 9);
+}
+.col-7-9 {
+  @include percentage(7, 9);
+}
+.col-6-9 {
+  @include percentage(6, 9);
+}
+.col-5-9 {
+  @include percentage(5, 9);
+}
+.col-4-9 {
+  @include percentage(4, 9);
+}
+.col-3-9 {
+  @include percentage(3, 9);
+}
+.col-2-9 {
+  @include percentage(2, 9);
+}
+.col-1-9 {
+  @include percentage(1, 9);
+}
+@media only screen and (min-width: $med-width) {
+  .col-9-9-med {
+    @include percentage(9, 9);
+  }
+  .col-8-9-med {
+    @include percentage(8, 9);
+  }
+  .col-7-9-med {
+    @include percentage(7, 9);
+  }
+  .col-6-9-med {
+    @include percentage(6, 9);
+  }
+  .col-5-9-med {
+    @include percentage(5, 9);
+  }
+  .col-4-9-med {
+    @include percentage(4, 9);
+  }
+  .col-3-9-med {
+    @include percentage(3, 9);
+  }
+  .col-2-9-med {
+    @include percentage(2, 9);
+  }
+  .col-1-9-med {
+    @include percentage(1, 9);
+  }
+}
+@media only screen and (min-width: $lrg-width) {
+  .col-9-9-lrg {
+    @include percentage(9, 9);
+  }
+  .col-8-9-lrg {
+    @include percentage(8, 9);
+  }
+  .col-7-9-lrg {
+    @include percentage(7, 9);
+  }
+  .col-6-9-lrg {
+    @include percentage(6, 9);
+  }
+  .col-5-9-lrg {
+    @include percentage(5, 9);
+  }
+  .col-4-9-lrg {
+    @include percentage(4, 9);
+  }
+  .col-3-9-lrg {
+    @include percentage(3, 9);
+  }
+  .col-2-9-lrg {
+    @include percentage(2, 9);
+  }
+  .col-1-9-lrg {
+    @include percentage(1, 9);
+  }
+}

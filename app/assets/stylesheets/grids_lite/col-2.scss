@@ -1,0 +1,25 @@
+@import "grids_lite_variables";
+@import "mixins";
+
+.col-2-2 {
+  @include percentage(2, 2);
+}
+.col-1-2 {
+  @include percentage(1, 2);
+}
+@media only screen and (min-width: $med-width) {
+  .col-2-2-med {
+    @include percentage(2, 2);
+  }
+  .col-1-2-med {
+    @include percentage(1, 2);
+  }
+}
+@media only screen and (min-width: $lrg-width) {
+  .col-2-2-lrg {
+    @include percentage(2, 2);
+  }
+  .col-1-2-lrg {
+    @include percentage(1, 2);
+  }
+}
