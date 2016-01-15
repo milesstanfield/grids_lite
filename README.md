@@ -53,7 +53,7 @@ Pick and choose which column stylesheets to include in your asset pipeline. **ba
 Wrap your ```col-``` classes in a ```columns``` class. If you are using text inside your ```col-``` classes you will also need to set a font-size for the text somewhere inside for the text to appear.
 
 Example 1
-```
+```html
 <div class="columns">
   <div class="col-1-1 col-1-2-med col-2-8-lrg">
     <div style="font-size: 20px">
@@ -70,7 +70,7 @@ Example 1
 ````
 
 Example 2
-```
+```html
 <div class="columns">
   <div class="col-1-1 col-1-5-med">
     <div style="font-size: 20px">
@@ -87,7 +87,7 @@ Example 2
 ```
 
 Example using gutters
-```
+```html
 <div class="columns gutters">
   <div class="col-1-1">
     <div style="font-size: 20px">
@@ -109,7 +109,7 @@ To change media query breakpoints and gutter widths, change the sass variables i
 
 which has these variables
 
-```
+```sass
 $med-width: 768px;
 $lrg-width: 1024px;
 $gutter-width: 20px;
