@@ -7,7 +7,7 @@ A responsive grid system doesn't have to be complicated or full of unused styles
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'grids_lite', '~> 1.0.1'
+gem 'grids_lite', '~> 1.0.2'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install grids_lite -v 1.0.1
+    $ gem install grids_lite -v 1.0.2
 
 ## Setup
 Run this in your console
