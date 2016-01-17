@@ -1,3 +1,16 @@
+@import "grids_lite_variables";
+@import "mixins";
+
 .col-1-1 {
   width: 100%;
+}
+@media only screen and (min-width: $med-width) {
+  .col-1-1-med {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: $lrg-width) {
+  .col-1-1-lrg {
+    width: 100%;
+  }
 }
